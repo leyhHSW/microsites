@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Workshop Webtechnologien</title>
+
+    <!-- Sperren des Viewports -->
+  	<meta name='viewport' content='width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no' />
+
+    <!-- Shortcut Icon -->
+  	<link rel="shortcut icon" type="image/x-icon" href="favicon2x.ico" >
+    <link rel="icon" type="image/x-icon" href="favicon2x.ico">
+
+    <!-- JS-BIBLIOTHEKEN - werden vor den Inhalten im Header geladen, damit die Methoden überall zur Verfügung stehen ...  -->
+    <!--<script src="jslib/modernizr-latest.js"></script>-->
+    <script src="jslib/jquery-1.11.3.js"></script>
+
+    <!-- Lege die neuen HTML5-Elemente für ältere Microsoft-Browser an ("lt IE 9" = "Älter als IE 9") -->
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement('section');
+        document.createElement('nav');
+        document.createElement('article');
+        document.createElement('main');
+        document.createElement('aside');
+        document.createElement('header');
+        document.createElement('footer');
+      </script>
+    <![endif]-->
+
+    <!-- das eigene Stylesheet ... -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+  </head>
+
+
+
+  <body>
+
+    <header>
+
+      <div id="navToggle" title="Navigation an/aus">Navigation an/aus</div>
+
+      <nav>
+        <!-- Navigationsleiste -->
+        <a title="Abschnitt 1" href="#abschnitt_1" class="">Abschnitt 1</a>
+        <a title="Abschnitt 2" href="#abschnitt_2" class="">Abschnitt 2</a>
+        <a title="Abschnitt 3" href="#abschnitt_3" class="">Abschnitt 3</a>
+        <a title="Abschnitt 4" href="#abschnitt_4" class="">Abschnitt 4</a>
+      </nav>
+
+    </header>
+
+    <main>
+      <!-- Hauptinhalte ... -->
+
+        <div id="abschnitt_1" class="heroImage">
+          <img class="image" src="files/kaffeebecher.jpg" />
+          <div class="textbox">
+            <h1>Seitentitel</h1>
+            <p class="small">
+              Ein einleitender Text ...
+            </p>
+          </div>
+
+        </div>
+
+        <div id="abschnitt_2" class="contentbox">
+          <img class="image" src="files/kaffeebecher.jpg" />
+          <p>
+            Absatz
+          </p>
+        </div>
+
+        <div id="abschnitt_3" class="contentbox grey imgRight">
+          <h2>Titel h2</h2>
+          <img class="image" src="files/languages.jpg" />
+          <p>
+            Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog. Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL® and Wefox™ are testing aussi la Kerning), um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast jede Schrift gut aus. Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur Pflicht werden. Nichteinhaltung wird mit bis zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren Schriften aber fast immer enthalten sind. Ein wichtiges aber schwierig zu integrierendes Feld sind OpenType-Funktionalitäten. Je nach Software und Voreinstellungen können eingebaute Kapitälchen, Kerning oder Ligaturen (sehr pfiffig) nicht richtig dargestellt werden.
+          </p>
+        </div>
+
+        <div id="abschnitt_4" class="contentbox">
+          <h2>Titel h2</h2>
+          <p>
+            Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.
+          </p>
+          <p>
+            Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog. Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL® and Wefox™ are testing aussi la Kerning), um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast jede Schrift gut aus. Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur Pflicht werden. Nichteinhaltung wird mit bis zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren Schriften aber fast immer enthalten sind. Ein wichtiges aber schwierig zu integrierendes Feld sind OpenType-Funktionalitäten. Je nach Software und Voreinstellungen können eingebaute Kapitälchen, Kerning oder Ligaturen (sehr pfiffig) nicht richtig dargestellt werden.
+          </p>
+          <img class="image" src="files/norte.jpg" />
+          <h3>Titel h3</h3>
+          <p>
+            Nichteinhaltung wird mit bis zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren Schriften aber fast immer enthalten sind. Ein wichtiges aber schwierig zu integrierendes Feld sind OpenType-Funktionalitäten.
+          </p>
+          <h3>Titel h3</h3>
+          <p>
+            Je nach Software und Voreinstellungen können eingebaute Kapitälchen, Kerning oder Ligaturen (sehr pfiffig) nicht richtig dargestellt werden.
+          </p>
+        </div>
+
+    </main>
+
+    <!-- eigene Skripte zur Dokument-Manipulation:
+         Werden nach den <body>-Elementen geladen,
+         damit diese (bereits geladenen) Elemente für die Skripte bereits zur Verfügung stehen.
+         Werden zunächst in Ladereihenfolge abgearbeitet, d.h. globale Objekte aus einem oberen Skript
+         stehen in einem unteren Skript immer noch zur Verfügung. -->
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
