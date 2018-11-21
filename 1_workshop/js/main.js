@@ -103,6 +103,9 @@ $scrollTop.on("click", function(ev) {
 });
 */
 
+
+
+
 /* smoothes und korrektes Scrollen bei AnkerLinks ... */
 var $ankerLinks = $("header nav a.anker");
 var offsetTop = 50;
@@ -116,7 +119,7 @@ $ankerLinks.on("click", function(ev) {
   }, 300, "swing");
   //window.location.hash = this.attributes.href.value;
 });
-
+/* Test: Event Listener über */
 /*
 window.onhashchange = function(ev) {
   ev.preventDefault();
