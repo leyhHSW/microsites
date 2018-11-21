@@ -45,15 +45,15 @@
 
       <nav>
         <!-- Navigationsleiste -->
-        <a title="Abschnitt 1" href="#abschnitt_1" class="">Abschnitt 1</a>
-        <a title="Abschnitt 2" href="#abschnitt_2" class="">Abschnitt 2</a>
-        <a title="Abschnitt 3" href="#abschnitt_3" class="">Abschnitt 3</a>
-        <a title="Abschnitt 4" href="#abschnitt_4" class="">Abschnitt 4</a>
+        <a title="Abschnitt 1" href="#abschnitt_1" class="anker">Abschnitt 1</a>
+        <a title="Abschnitt 2" href="#abschnitt_2" class="anker">Abschnitt 2</a>
+        <a title="Abschnitt 3" href="#abschnitt_3" class="anker">Abschnitt 3</a>
+        <a title="Abschnitt 4" href="#abschnitt_4" class="anker">Abschnitt 4</a>
       </nav>
 
     </header>
 
-    <main>
+    <main id="main">
       <!-- Hauptinhalte ... -->
 
         <div id="abschnitt_1" class="heroImage">
@@ -103,12 +103,15 @@
 
     </main>
 
+    <div id="scrollTop"></div>
+
     <!-- eigene Skripte zur Dokument-Manipulation:
          Werden nach den <body>-Elementen geladen,
          damit diese (bereits geladenen) Elemente für die Skripte bereits zur Verfügung stehen.
          Werden zunächst in Ladereihenfolge abgearbeitet, d.h. globale Objekte aus einem oberen Skript
          stehen in einem unteren Skript immer noch zur Verfügung. -->
     <script src="js/main.js"></script>
+    <!-- <script src="js/smoothscroll.js"></script> -->
 
   </body>
 
