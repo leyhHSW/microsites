@@ -39,7 +39,8 @@ window.onresize = function() {
 var scrollTop = document.getElementById("scrollTop");  // Element-Selektor, JSonly-Variante ...
 var $scrollTop = $("#scrollTop");                      // Element-Selektor, jQuery-Variante ...
 var mainContent = document.getElementById("main");
-
+console.log(scrollTop);
+console.log($scrollTop);
 console.log(mainContent.offsetHeight); // Höhe der Gesamtseite, von <main> abgeleitet ...
 console.log(window.pageYOffset);       // Scrollposition der Seite ...
 console.log(window.innerHeight);       // Höhe des Viewports ...
@@ -50,6 +51,7 @@ var screenHeightRatio = .667;
 /* ... Ein- und Ausblenden des scrollTop-Buttons ... */
 // JSonly-Variante
 window.onscroll = function() {
+  //console.log("scroll: " + window.pageYOffset);
   var scrollTopTogglePoint = mainContent.offsetHeight - window.innerHeight - (window.innerHeight * screenHeightRatio);
   if (window.pageYOffset > scrollTopTogglePoint) {
     scrollTop.classList.add("active");
@@ -113,12 +115,28 @@ console.log($ankerLinks);
 
 $ankerLinks.on("click", function(ev) {
   ev.preventDefault(); // unterbinde das Standardverhalten ...
-
+  $ankerLinks.removeClass("active");
+  this.classList.add("active");
   $("html, body").animate({
     scrollTop: $(this.attributes.href.value).offset().top - offsetTop
   }, 300, "swing");
   //window.location.hash = this.attributes.href.value;
 });
+window.onload = function() {
+  if (window.location.hash) {
+    console.log("hash");
+    var $thisAnker = $ankerLinks.filter("[href="+window.location.hash+"]");
+    if ($thisAnker.length) {
+      $ankerLinks.removeClass("active");
+      $thisAnker.addClass("active");
+      $("html, body").animate({
+        scrollTop: $(window.location.hash).offset().top - offsetTop
+      }, 300, "swing");
+    }
+  } else {
+    console.log("nohash");
+  }
+}
 /* Test: Event Listener über */
 /*
 window.onhashchange = function(ev) {

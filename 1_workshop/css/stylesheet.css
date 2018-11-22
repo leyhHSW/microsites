@@ -240,7 +240,7 @@ nav a:active,
 nav a:focus {
   color: rgb(120, 220, 20);
 }
-nav a.aktiv {
+nav a.active {
   color: #ffffff;
 }
 
@@ -277,7 +277,7 @@ header.aktiv #navToggle {
   }
   nav a {
     display: none;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff;
     margin: 0 15px 0 55px;
   }
   header.aktiv nav a {
@@ -297,7 +297,7 @@ header.aktiv #navToggle {
   bottom: 0px;
   left: 50%;
   margin-left: -20px;
-  background-color: rgb(80,80,100);
+  background-color: rgba(80,80,100,1);
   background-image: url("images/arrow-top.png");
   background-size: 40px;
   background-position: center;
