@@ -1,0 +1,49 @@
+h1 {
+
+}
+
+.h1
+{
+
+  position: absolute;
+  top: 150px;
+  text-align: left;
+  width: 50%;
+  margin:auto;
+  font-family: 'Roboto Slab', serif;
+  border: 3px solid black;
+  padding: 2px 10px 2px 10px;
+  z-index: 1;
+
+
+}
+.center
+{
+
+
+  position: absolute;
+  top:300px;
+  text-align: left;
+margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 2px 10px 2px 10px;
+  font-family: 'Roboto Slab', serif;
+  z-index: 1;
+}
+
+.mycanvas {
+  position:absolute;
+  z-index: 2;
+}
+
+
+#info {
+  text-align: center;
+  margin: auto;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16pt;
+
+  border: 3px solid black;
+
+}
